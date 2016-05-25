@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Login</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link href="myCss.css" rel="stylesheet" type="text/css" />
+        
+        
+    </head>
+    <body>
+        
+         
+         
+        
+        <div id="wrapper">
+        <form name="LoginForm" class="login-form" action="login.jsp" method="post">
+            <div class="header">
+                
+    <!--TITLE--><h1>STUDENT LOGIN</h1><!--END TITLE-->
+    <!--DESCRIPTION--><span>Fill out the form below to login to my super awesome imaginary control panel.</span><!--END DESCRIPTION-->
+    </div>
+    <!--END HEADER-->
+	
+	<!--CONTENT--> 
+    <div class="content">
+        <!--USERNAME--><input name="userid" type="text" class="input username" placeholder="Enter UserId..[0-9]" pattern="[0-9]+" onfocus="this.value=''"/><!--END USERNAME-->
+        <!--PASSWORD--><input name="password" type="password" class="input password" placeholder="Enter Password.." onfocus="this.value=''" /><!--END PASSWORD-->
+    </div>
+    <!--END CONTENT-->
+    
+    <!--FOOTER--> 
+    <div class="footer">
+    <!--LOGIN BUTTON--><input type="submit" name="submit" value="SignIn" class="button" /><!--END LOGIN BUTTON-->
+    <!--REGISTER BUTTON--><input type="button" name="submit" value="SignUp" class="button2" onclick="window.location.assign('createUser.jsp')" /><!--END REGISTER BUTTON-->
+   
+    </div>
+    <!--END FOOTER-->
+
+        </form>
+        </div>
+    </body>
+</html>
